@@ -1,7 +1,7 @@
 <?php 
 class AutenticationService{
 
-	private sessionData;
+	private $sessionData;
 
 	public function __construct(array $sessionData = array())
 	{

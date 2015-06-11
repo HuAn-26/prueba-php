@@ -3,7 +3,7 @@
 require('User.php');
 require('coffee.php');
 require('AutenticationService.php');
-require('coffemaker.php');
+require('coffeemaker.php');
 require('BarTender.php');
 
 interface BeverageMaker{
@@ -11,7 +11,7 @@ interface BeverageMaker{
 	public function make();
 }
 
-class Controller
+class Controller 
 {
 	private $auth;
 
@@ -33,5 +33,5 @@ class Controller
 
 $autenticacion = new AutenticationService(array('name' => 'Hugo'));
 
-$Controller = new Controller(new AutenticationService());
+$Controller = new Controller($autenticacion);
 $Controller->action(new BarTender());

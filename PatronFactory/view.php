@@ -1,1 +1,1 @@
-echo "<h1><?php $message  ?></h1>";
+<h1><?= $message  ?></h1>
